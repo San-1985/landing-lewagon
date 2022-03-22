@@ -1,0 +1,125 @@
+/* Write some CSS below */
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #404042;
+    font-size: 18px;
+    background-color: rgba(241, 241, 248, 0.925);
+  }
+  
+  h1, h2, h3 {
+    font-family: 'PT Serif', serif;
+  }
+
+  h1 {
+    letter-spacing: 7px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  a {
+    color: #c7c7ca;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  a:hover {
+    background-color: #0D1EC6;;
+    color: #afadae;
+  }
+
+  /* custom class design */
+
+.container {
+  width: 900px;
+  margin: 60px auto;
+}  
+
+.banner {
+    color: white;
+    text-align: center;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+}
+
+.button-blue {
+    background-color: #3049DE;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  font-size: 24px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-white {
+    border-radius: 5px;
+    padding: 18px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+
+}
+
+.card-white img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #404042;
+  color: white;
+  padding: 10px 0px;
+}
+
+/* media queries */
+
+@media (min-width: 300px) {
+  .container {
+    width: 400px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
